@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+            *,
+            *::before,
+            *::after {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            header{
+                position: sticky;
+                top: 0;
+                left: 0;
+            }
+
+            html {
+                font-size: 10px;
+            }
+
+            body {
+                font-family: "Poppins", sans-serif;
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+                font-size: inherit;
+            }
+
+            .topbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #333;
+                color: #fff;
+                padding: 10px 20px;
+            }
+
+            .logo {
+                font-size: 3.2rem;
+            }
+
+            .title {
+                font-size: 2.4rem;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            .date {
+                font-size: 1.6rem;
+                font-family: "Playfair Display", serif;
+            }
+
+            .navbar {
+                margin: 20px;
+                position: sticky;
+                top: 0;
+                left: 0;
+                background-color: #fff;
+            }
+
+
+            .navbar nav ul {
+                display: flex;
+                justify-content: center;
+                list-style-type: none;
+                gap: 15px;
+                color: #333;
+                font-size: 1.6rem;
+            }
+
+            .navbar nav ul li a:hover {
+                color: #007BFF;
+            }
+
+            main {
+                padding: 20px;
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            aside {
+                flex-grow: 1;
+                border: 1px solid #ccc;
+                padding: 10px;
+            }
+
+            .right-content {
+                flex-grow: 4;
+                border: 1px solid #ccc;
+                padding: 10px;
+            }
+
+            section h2 {
+                font-size: 2rem;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                text-align: center;
+                color: #333;
+            }
+
+
+            img {
+                display: block;
+                border-radius: 8px;
+            }
+
+            .container,
+            .container-absolute,
+            .container-fixed,
+            .container-sticky {
+                margin: 20px;
+                display: inline-block;
+            }
+
+            h2 {
+                padding: 8px 12px;
+                background-color: #fff;
+                color: #333;
+                display: inline-block;
+            }
+
+            .container h2 {
+                position: relative;
+                top: -50px;
+                left: 10px;
+            }
+
+            .container-absolute {
+                position: relative;
+            }
+
+            .container-absolute h2 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+            }
+
+            .container-fixed h2 {
+                position: fixed;
+                top: 200px;
+                left: 0;
+                width: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="topbar">
+                <div class="logo position">
+                    TECHAXIS
+                </div>
+                <div class="title">
+                    Welcome to techaxis
+                </div>
+                <div class="date">
+                    June 10, 2024
+                </div>
+            </div>
+
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="table.html">Table</a></li>
+                        <li><a href="completesite.html">Complete Site</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <div class="container">
+            <img src="images/nature.avif" height="200px" width="200px" />
+            <h2>Nature</h2>
+        </div>
+
+        <div class="container-absolute">
+            <img src="images/nature.avif" height="200px" width="200px" />
+            <h2>Nature</h2>
+        </div>
+
+        <div class="container-fixed">
+            <img src="images/nature.avif" height="200px" width="200px" />
+            <h2>Nature</h2>
+        </div>
+
+
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, culpa iste velit quo expedita quae adipisci
+        eaque error officia. Voluptas quas ad accusamus rerum, eaque corporis veritatis doloremque commodi
+        laboriosam!
+        Odit unde eum minima quidem facilis facere numquam reiciendis deserunt minus vero perferendis laudantium,
+        debitis molestias iste, sed, possimus error. Ut qui libero quidem nostrum mollitia. Quod tempora perferendis
+        quidem.
+        Nesciunt, nulla animi? Culpa, odio ut minima illo voluptatem nihil nisi reprehenderit ex sequi debitis
+        consequuntur cumque sed laborum? Consequatur ipsum et animi dolore non eaque in mollitia, aliquam suscipit?
+        Vel libero porro sapiente doloribus facere! Inventore dicta quidem eius ut omnis tempora aspernatur, vitae
+        debitis, exercitationem sapiente ullam nobis accusantium, unde repellat quis iste hic suscipit est! Quas,
+        deserunt?
+        Aut aperiam maxime et provident ullam, cum nihil excepturi officia amet, at corporis exercitationem quas
+        minima
+        fugiat. Vel quasi veritatis earum et non architecto, modi reprehenderit nihil officia officiis quas.
+        Blanditiis sequi possimus assumenda illo placeat recusandae, hic tenetur velit ipsam voluptate
+        necessitatibus
+        ipsa ratione? Atque impedit repudiandae incidunt tempora cumque! Tenetur reiciendis vitae voluptatum iusto
+        sit
+        laboriosam architecto ad!
+        Nostrum itaque numquam ea natus iste esse neque voluptatem tenetur deserunt ipsa at suscipit, hic asperiores
+        perferendis. Magnam rem autem hic temporibus unde vel nostrum, harum reprehenderit cumque nobis repudiandae!
+        Vero laboriosam non ea maiores iste blanditiis omnis obcaecati maxime neque quis ullam quam incidunt id
+        sequi
+        ipsa alias illo, tempore ex labore iure fugiat et repellendus ab laudantium. Impedit.
+        At eligendi iure illum quo doloremque facere aut et aperiam, ullam voluptatibus nemo, laborum sapiente ipsa
+        odio
+        sint consequatur dolore quos quas? Vero, aliquid repellendus qui et accusantium reiciendis tenetur?
+        Deserunt blanditiis modi at iste magnam eveniet, veritatis culpa pariatur explicabo, animi necessitatibus
+        fugiat, magni enim eos ipsam? Veritatis ratione itaque corrupti neque hic illo fuga quisquam excepturi quam?
+        Maxime.
+
+        Vero laboriosam non ea maiores iste blanditiis omnis obcaecati maxime neque quis ullam quam incidunt id
+        sequi
+        ipsa alias illo, tempore ex labore iure fugiat et repellendus ab laudantium. Impedit.
+        At eligendi iure illum quo doloremque facere aut et aperiam, ullam voluptatibus nemo, laborum sapiente ipsa
+        odio
+        sint consequatur dolore quos quas? Vero, aliquid repellendus qui et accusantium reiciendis tenetur?
+        Deserunt blanditiis modi at iste magnam eveniet, veritatis culpa pariatur explicabo, animi necessitatibus
+        fugiat, magni enim eos ipsam? Veritatis ratione itaque corrupti neque hic illo fuga quisquam excepturi quam?
+        Maxime.
+
+
+        Vero laboriosam non ea maiores iste blanditiis omnis obcaecati maxime neque quis ullam quam incidunt id
+        sequi
+        ipsa alias illo, tempore ex labore iure fugiat et repellendus ab laudantium. Impedit.
+        At eligendi iure illum quo doloremque facere aut et aperiam, ullam voluptatibus nemo, laborum sapiente ipsa
+        odio
+        sint consequatur dolore quos quas? Vero, aliquid repellendus qui et accusantium reiciendis tenetur?
+        Deserunt blanditiis modi at iste magnam eveniet, veritatis culpa pariatur explicabo, animi necessitatibus
+        fugiat, magni enim eos ipsam? Veritatis ratione itaque corrupti neque hic illo fuga quisquam excepturi quam?
+        Maxime.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, culpa iste velit quo expedita quae adipisci
+        eaque error officia. Voluptas quas ad accusamus rerum, eaque corporis veritatis doloremque commodi
+        laboriosam!
+        Odit unde eum minima quidem facilis facere numquam reiciendis deserunt minus vero perferendis laudantium,
+        debitis molestias iste, sed, possimus error. Ut qui libero quidem nostrum mollitia. Quod tempora perferendis
+        quidem.
+        Nesciunt, nulla animi? Culpa, odio ut minima illo voluptatem nihil nisi reprehenderit ex sequi debitis
+        consequuntur cumque sed laborum? Consequatur ipsum et animi dolore non eaque in mollitia, aliquam suscipit?
+        Vel libero porro sapiente doloribus facere! Inventore dicta quidem eius ut omnis tempora aspernatur, vitae
+        debitis, exercitationem sapiente ullam nobis accusantium, unde repellat quis iste hic suscipit est! Quas,
+        deserunt?
+        Aut aperiam maxime et provident ullam, cum nihil excepturi officia amet, at corporis exercitationem quas
+        minima
+        fugiat. Vel quasi veritatis earum et non architecto, modi reprehenderit nihil officia officiis quas.
+        Blanditiis sequi possimus assumenda illo placeat recusandae, hic tenetur velit ipsam voluptate
+        necessitatibus
+        ipsa ratione? Atque impedit repudiandae incidunt tempora cumque! Tenetur reiciendis vitae voluptatum iusto
+        sit
+        laboriosam architecto ad!
+        Nostrum itaque numquam ea natus iste esse neque voluptatem tenetur deserunt ipsa at suscipit, hic asperiores
+        perferendis. Magnam rem autem hic temporibus unde vel nostrum, harum reprehenderit cumque nobis repudiandae!
+        Vero laboriosam non ea maiores iste blanditiis omnis obcaecati maxime neque quis ullam quam incidunt id
+        sequi
+        ipsa alias illo, tempore ex labore iure fugiat et repellendus ab laudantium. Impedit.
+        At eligendi iure illum quo doloremque facere aut et aperiam, ullam voluptatibus nemo, laborum sapiente ipsa
+        odio
+        sint consequatur dolore quos quas? Vero, aliquid repellendus qui et accusantium reiciendis tenetur?
+        Deserunt blanditiis modi at iste magnam eveniet, veritatis culpa pariatur explicabo, animi necessitatibus
+        fugiat, magni enim eos ipsam? Veritatis ratione itaque corrupti neque hic illo fuga quisquam excepturi quam?
+        Maxime.
+
+        Vero laboriosam non ea maiores iste blanditiis omnis obcaecati maxime neque quis ullam quam incidunt id
+        sequi
+        ipsa alias illo, tempore ex labore iure fugiat et repellendus ab laudantium. Impedit.
+        At eligendi iure illum quo doloremque facere aut et aperiam, ullam voluptatibus nemo, laborum sapiente ipsa
+        odio
+        sint consequatur dolore quos quas? Vero, aliquid repellendus qui et accusantium reiciendis tenetur?
+        Deserunt blanditiis modi at iste magnam eveniet, veritatis culpa pariatur explicabo, animi necessitatibus
+        fugiat, magni enim eos ipsam? Veritatis ratione itaque corrupti neque hic illo fuga quisquam excepturi quam?
+        Maxime.
+
+
+        Vero laboriosam non ea maiores iste blanditiis omnis obcaecati maxime neque quis ullam quam incidunt id
+        sequi
+        ipsa alias illo, tempore ex labore iure fugiat et repellendus ab laudantium. Impedit.
+        At eligendi iure illum quo doloremque facere aut et aperiam, ullam voluptatibus nemo, laborum sapiente ipsa
+        odio
+        sint consequatur dolore quos quas? Vero, aliquid repellendus qui et accusantium reiciendis tenetur?
+        Deserunt blanditiis modi at iste magnam eveniet, veritatis culpa pariatur explicabo, animi necessitatibus
+        fugiat, magni enim eos ipsam? Veritatis ratione itaque corrupti neque hic illo fuga quisquam excepturi quam?
+        Maxime.
+    </body>
+
+    </html>
+</body>
+
+</html>
