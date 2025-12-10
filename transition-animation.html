@@ -106,7 +106,6 @@
                 transform: translateX(60vw);
             }
 
-
             100% {
                 transform: translateX(0);
             }
@@ -122,9 +121,29 @@
             }
         }
 
+        @keyframes changeColor {
+            0% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            100% {
+                background-color: green;
+            }
+        }
+
 
         .box1 {
-            animation: moveRight 4s infinite, scale 2s infinite;
+            margin: 20px;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            animation: changeColor 4s 2s;
+            animation-fill-mode: backwards;
+            animation-play-state: running;
             text-align: center;
         }
 
@@ -152,11 +171,11 @@
         </div>
     </header>
     <div class="box1">
-        I will come from left
+
     </div>
 
     <div class="box2">
-        I will come from right
+
     </div>
 
 </body>
