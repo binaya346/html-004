@@ -60,6 +60,8 @@ main {
     padding: 40px 24px;
 }
 
+/* Reusable */
+
 .section-heading {
     padding: 8px 16px;
     border-radius: 25px;
@@ -138,4 +140,74 @@ main {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+/* Sections */
+.hero-section {
+    padding-bottom: 48px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.report-top {
+    display: flex;
+    gap: 20px;
+    padding-top: 24px;
+}
+
+.report-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.report-item .report-data {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.report-item .report-description {
+    font-size: 14px;
+    color: #4B5769;
+}
+
+.hero-right {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature-wrapper {
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid #d9d9d9;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.feature-wrapper b {
+    font-size: 14px;
+}
+
+.feature-wrapper p {
+    font-size: 12px;
+    color: #4B5769;
+}
+
+.feature-wrapper .svg-wrapper {
+    color: #fff;
+    height: 40px;
+    min-width: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.feature-wrapper .lightning {
+    background-color: #2B7FFF;
+}
+
+.feature-wrapper .cloud {
+    background-color: #00C851;
 }
