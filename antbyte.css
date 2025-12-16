@@ -58,6 +58,9 @@ header {
     background-color: #fff;
     padding: 0 24px;
     position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 10;
 }
 
 header .mobile-nav {
@@ -88,6 +91,7 @@ header .mobile-nav {
     border-radius: 8px;
 }
 
+
 /* Desktop nav */
 
 .desktop-nav {
@@ -107,7 +111,36 @@ nav ul li a {
     font-size: 16px;
     padding: 8px 0;
     text-decoration: none;
-    color: #000
+    color: #000;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    background-color: #1E2938;
+    transition: width 500ms linear;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    right: 50%;
+    bottom: 0;
+    width: 0;
+    background-color: #1E2938;
+    transition: width 500ms linear;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+    width: 50%;
+    transition: width 500ms linear;
 }
 
 main {
